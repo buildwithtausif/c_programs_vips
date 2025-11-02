@@ -174,8 +174,8 @@ int m_prod() {
 	printf("\nWorking on %dx%d matrix and %dx%d matrix", m,n,j,k);
 	
 	// check for valid sizes
-	if (m != j || n != k) {
-		printf("Invalid matrix(s)!");
+	if (n != j) {
+		printf("Invalid matrix(s) size!");
 		goto get_sizes;
 	}
 	// setup 2d matrix and get values
