@@ -14,6 +14,7 @@ int main() {
 	printf("Please enter range to print fibonacci series: ");
 	scanf("%d", &range);
 	int i;
+	printf("\n\n-------------------OUTPUT-------------------\n\n");
 	printf("fibonacci series: ");
 	for (i = 0; i < range; i++) {
 		printf("%d ", fibonacci(i));

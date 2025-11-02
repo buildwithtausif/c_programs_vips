@@ -13,6 +13,7 @@ void staticTest() {
 }
 int main() {
     printf("Tausif Alam, BCA-1EA\n\n");
+    printf("\n\n-------------------OUTPUT-------------------\n\n");
 	staticTest();
 	staticTest();
 	staticTest();
