@@ -1,5 +1,5 @@
 /*
- * Program: [Program to show the use of string function strcpy(), strcmp(), strlen()]
+ * Program: [Program to show the use of string function strcpy(), strcat(), strcmp(), strlen()]
  * Author:  Tausif Alam, BCA-1EA
  * Date:    " . 2025.Year . "-" . 11.Month . "-" . 06.Day . "
  */
@@ -31,6 +31,9 @@ int main() {
     strcpy(string3, string1);
     printf("String 3: %s\n", string3);
     printf("String 3 length: %d\n", strlen(string3));
+    // concatenate
+    strcat(string1, string2);
+    printf("Concatenated string: %s\n", string1);
     
 
     return 0;

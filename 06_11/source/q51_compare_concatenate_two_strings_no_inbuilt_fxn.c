@@ -14,11 +14,20 @@ int main() {
     printf("Please enter second string: ");
     scanf("%s", string2);
     //get string lengths and add null character
-    int i, j;
+    int i,i2 = 0, j, asciiDiff = 0;
     for (i = 0; string1[i] != '\0'; i++);
     string1[i] = '\0';
     for (j = 0; string2[j] != '\0'; j++);
     string2[j] = '\0';
+    // compare strings
+	while (string1[i2] != '\0' && string2 != '\0') {
+		if (string1[i2] != string2[i2]) {
+			asciiDiff = string1[i2] - string2[i2];
+			break;
+		}
+		i2++;
+	}
+	printf("\nThe ASCII difference between string1 & string2 is: %d\n", asciiDiff);
     // creating a concatenation string with a length greater than string1 and string2 combined +2 for whitespace and null character
     char concat[i + j + 2];
     // now to concatenate the strings
