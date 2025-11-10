@@ -9,7 +9,7 @@
 int main() {
     printf("Tausif Alam, BCA-1EA\n\n");
     char string1[100];
-    int i, j, asciiDiff;
+    int i, j = 0, asciiDiff = 0;
     printf("Please enter string: ");
     scanf("%s", string1);
     for (i = 0; string1[i] != '\0'; i++);

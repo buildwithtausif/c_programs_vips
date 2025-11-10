@@ -20,6 +20,7 @@ int main() {
         rString[j] = string[i];
         j++;
     }
+    rString[j] = '\0';
     printf("\nReversed string: %s\n", rString);
     return 0;
 }
