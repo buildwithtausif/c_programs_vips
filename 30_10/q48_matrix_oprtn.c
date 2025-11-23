@@ -1,5 +1,5 @@
 /*
- * Program: [Matix Operation - 2D array]
+ * Program: [Matrix Operation - 2D array]
  * Author:  Tausif Alam, BCA-1EA
  * Date:    " . 2025.Year . "-" . 10.Month . "-" . 30.Day . "
  */
@@ -33,7 +33,6 @@ int main() {
 				break;
 		default: printf("Error: not a valid input!");
 				 goto option_scan;
-				 break;
 				 
 	}
     return 0;
@@ -213,7 +212,7 @@ int m_prod() {
 	for (core_counter = 0; core_counter < m; core_counter++) {
 		printf(" | ");
 		for (inner_counter = 0; inner_counter < k; inner_counter++) {
-			printf("%3d", prodMatrix[core_counter][inner_counter]);
+			printf(" %3d", prodMatrix[core_counter][inner_counter]);
 		}
 		printf(" | ");
 		printf("\n");
