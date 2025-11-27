@@ -11,7 +11,6 @@ int main()
     printf("Tausif Alam, BCA-1EA\n\n");
 
     FILE *fp;
-
     // Write to file
     fp = fopen("q58.txt", "w");
     if (fp == NULL)
