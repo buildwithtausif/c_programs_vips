@@ -11,34 +11,32 @@ int main()
     printf("Tausif Alam, BCA-1EA\n\n");
 
     FILE *fp;
-    // Write to file
-    fp = fopen("q58.txt", "w");
-    if (fp == NULL)
-    {
-        printf("FILE NOT OPENED");
+    fp = fopen("./file_handling_char.txt", "w");
+    // // prompt error if no file is open fp return null if file do not exist
+    if (!fp) {
+        printf("Error opening file\n");
         return 1;
     }
-
-    printf("Enter TEXT to save: ");
-    char c[100];
-    fgets(c, 100, stdin);
-
-    fprintf(fp, "%s", c);
+    // when everything is 200ok
+    // at this point a blank file is created in the system
+    // write something of our into the file
+    char data[40] = "this machines say i can handle files";
+    // int j;
+    // for (j = 0; j < 36; j++) {
+    //     putc(data[j], fp);
+    // }
+    fputs(data, fp); // adds that string char[]
     fclose(fp);
+    printf("\n\nData successfully written in file");
 
-    // Reopen to read
-    fp = fopen("q58.txt", "r");
-    if (fp == NULL)
-    {
-        printf("FILE NOT OPENED");
-        return 1;
+    // now reading from this file
+    fp = fopen("./file_handling_char.txt", "r");
+    printf("\n\nRead from file: ");
+    // fgets read char-by-char
+    while (fgets(data, 40, fp) != NULL) {
+        printf("%s", data);
     }
-
-    char reader[100];
-    fgets(reader, 100, fp);
-
-    printf("Text read from file: %s\n", reader);
-
     fclose(fp);
+
     return 0;
 }

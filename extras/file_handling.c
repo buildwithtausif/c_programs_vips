@@ -18,7 +18,7 @@ int main() {
     // when everything is 200ok
     // at this point a blank file is created in the system
     // write something of our into the file
-    char data[36] = "this machines say i can handle files";
+    char data[40] = "this machines say i can handle files";
     // int j;
     // for (j = 0; j < 36; j++) {
     //     putc(data[j], fp);
